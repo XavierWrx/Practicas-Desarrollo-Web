@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+<body>
+
+    <main class="card">
+        <h2>Registro de Usuario</h2>
+
+        <form action="#">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+            <label for="pass">Contraseña:</label>
+            <input type="password" id="pass" name="pass" placeholder=" 8 caracteres" required>
+
+            <label>Género:</label>
+            <div class="grupo-opciones">
+                <div class="item">
+                    <input type="radio" id="m" name="genero" value="M">
+                    <label style="display:inline; font-weight:normal;" for="m">Masculino</label>
+                </div>
+                <div class="item">
+                    <input type="radio" id="f" name="genero" value="F">
+                    <label style="display:inline; font-weight:normal;" for="f">Femenino</label>
+                </div>
+            </div>
+
+            <label>Intereses:</label>
+            <div class="grupo-opciones" style="background-color: #fff9c4;">
+                <div class="item">
+                    <input type="checkbox" id="web" name="interes" value="web">
+                    <label style="display:inline; font-weight:normal;" for="web">Desarrollo Web</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="net" name="interes" value="net">
+                    <label style="display:inline; font-weight:normal;" for="net">Redes</label>
+                </div>
+            </div>
+
+            <button type="submit">Enviar Registro</button>
+        </form>
+    </main>
+
+</body>
+</html>
